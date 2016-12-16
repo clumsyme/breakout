@@ -144,12 +144,12 @@ function play() {
     if (point.willTouch(qiupai)) {
             point.touch(qiupai)
         }
-    for (let brick of this.bricks) {
+    for (let brick of bricks) {
         if (point.willTouch(brick)) {
             point.touch(brick)
         }
     }
-    for (let brick of this.bricks) {
+    for (let brick of bricks) {
         brick.draw()
     }
     window.requestAnimationFrame(play)
